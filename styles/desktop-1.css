@@ -239,8 +239,6 @@ body {
   background: linear-gradient(112.67deg, #ad36cb 32.23%, #323233 67.37%);
   border-radius: 3.2rem;
   flex-shrink: 0;
-  position: relative;
-  left: 350px;
 }
 .desktop-1-h6m .auto-group-1dgz-Jow .auto-group-p6yt-3Q9 .auto-group-vlso-9TB {
   margin-bottom: 5.8rem;
@@ -935,7 +933,7 @@ body {
 .icon-location{
   width: 4em;
   position: absolute;
-  left: 350px;
+  left: 250px;
 }
 .wind1{
   margin: 0rem 0.1rem 0.2rem 0rem;
@@ -1057,8 +1055,8 @@ flex-shrink: 0;
 width: 13.2rem;
 height: 4.5rem;
 position: absolute;
-right: 80px;
-bottom:180px;
+right: 320px;
+bottom:400px;
 font-size: 2rem;
 font-weight: 300;
 line-height: 1.5;
@@ -1069,8 +1067,8 @@ white-space: nowrap;
 .icon{
   height: 150px;
   position: absolute;
-  right: 70px;
-  bottom:200px;
+  right: 300px;
+  bottom:420px;
 }
 
 .humidity{
@@ -1184,25 +1182,29 @@ flex-shrink: 0;
   border-bottom: none;
   border-top: none;
   z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
   top: 100%;
   left: 0;
   right: 0;
-  width: 88%;
-  font-size: large;
 }
 
 .searchbox-items div {
+  width: 84%;
+  font-size: large;
   padding: 15px;
   cursor: pointer;
   background-color: #fff; 
   border-bottom: 1px solid #d4d4d4; 
 }
 
+/*when hovering an item:*/
 .searchbox-items div:hover {
-  background-color: #e9e9e9; 
+  /* background-color: #e9e9e9;  */
 }
 
+/*when navigating through the items using the arrow keys:*/
 .searchbox-active {
+
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
